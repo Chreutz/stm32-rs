@@ -1,6 +1,23 @@
 "SAI,SAI?":
   "*CR1":
-    #MCKDIV:
+    MCKDIV:
+      Div1: [0, "Divide by 1"]
+      Div2: [1, "Divide by 2"]
+      Div4: [2, "Divide by 4"]
+      Div6: [3, "Divide by 6"]
+      Div8: [4, "Divide by 8"]
+      Div10: [5, "Divide by 10"]
+      Div12: [6, "Divide by 12"]
+      Div14: [7, "Divide by 14"]
+      Div16: [8, "Divide by 16"]
+      Div18: [9, "Divide by 18"]
+      Div20: [10, "Divide by 20"]
+      Div22: [11, "Divide by 22"]
+      Div24: [12, "Divide by 24"]
+      Div26: [13, "Divide by 26"]
+      Div28: [14, "Divide by 28"]
+      Div30: [15, "Divide by 30"]
+      Div32: [16, "Divide by 32"]
     NODIV:
       MasterClock: [0, "Master clock generator is enabled"]
       NoDiv: [1, "No divider used in the clock generator (in this case Master Clock Divider bit has no effect)"]
@@ -77,8 +94,10 @@
       FallingEdge: [0, "FS is active low (falling edge)"]
       RisingEdge: [1, "FS is active high (rising edge)"]
     #FSDEF:
-    #FSALL:
-    #FRL:
+    FSALL:
+      _write_constraint: [0,127]
+    FRL:
+      _write_constraint: [8,255]
 
   "*SLOTR":
     SLOTEN:
