@@ -17,7 +17,6 @@
       Div26: [13, "Divide by 26"]
       Div28: [14, "Divide by 28"]
       Div30: [15, "Divide by 30"]
-      Div32: [16, "Divide by 32"]
     NODIV:
       MasterClock: [0, "Master clock generator is enabled"]
       NoDiv: [1, "No divider used in the clock generator (in this case Master Clock Divider bit has no effect)"]
